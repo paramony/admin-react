@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import AdminContextContainer, {
   AdminContext,
 } from '../../context/adminLayoutContext';
+import Dashboard from '../../pages/dashboard/dashboard';
 import Navbar from './navbar/Index';
 import SideBar from './sidebar/Index';
 
@@ -16,7 +17,9 @@ const Index = () => {
       <section
         id="content_section"
         className={`bg-light py-2 px-3 ${showSidebar ? 'with_sidebar' : null}`}
-      ></section>
+      >
+        <Dashboard />
+      </section>
     </AdminContextContainer>
   );
 };
