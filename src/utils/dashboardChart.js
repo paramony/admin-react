@@ -54,7 +54,7 @@ export const setDashboardChart = (labels, datapoints) => {
 
     const ctx = document.getElementById('myChart').getContext('2d');
     var myLineChart = new Chart(ctx, config);
-    // myLineChart.destroy();
+    myLineChart.destroy();
     // myLineChart = new Chart(ctx, config);
 
 }

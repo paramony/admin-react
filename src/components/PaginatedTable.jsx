@@ -57,7 +57,7 @@ const PaginatedTable = ({
         </div>
       </div>
       <table className="table table-responsive text-center table-hover table-bordered">
-        <thead classNameName="table-secondary">
+        <thead className="table-secondary">
           <tr>
             {dataInfo.map((i, index) => (
               <th key={index}>{i.title}</th>
