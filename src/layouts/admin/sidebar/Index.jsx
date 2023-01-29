@@ -39,19 +39,19 @@ const Sidebar = () => {
           />
 
           <SidebarItem
-            targetPath="/test"
+            targetPath="/brands"
             title="مدیریت برند ها"
             icon="fas fa-copyright"
           />
 
           <SidebarItem
-            targetPath="/test"
+            targetPath="/guraranties"
             title="مدیریت گارانتی ها"
             icon="fab fa-pagelines"
           />
 
           <SidebarItem
-            targetPath="/test"
+            targetPath="/colors"
             title="مدیریت رنگ ها"
             icon="fas fa-palette"
           />
