@@ -403,4 +403,8 @@ th {
 .navbar.fixed-top {
   z-index: unset !important;
 }
+.disabled {
+  opacity: 0.5;
+  pointer-events: none !important;
+}
 /* content end-------<<<<<<< */
