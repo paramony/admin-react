@@ -57,62 +57,61 @@ const Sidebar = () => {
           />
 
           <SidebarItem
-            targetPath="/test"
-            title="مدیریت تخفیف ها"
+            targetPath="/discounts"
             icon="fas fa-percentage"
+            title="مدیریت تخفیف ها"
           />
           {/* <!-- =================================== --> */}
           <SidebarGroupTitle title=" سفارشات و سبد" />
 
           <SidebarItem
-            targetPath="/test"
-            title="مدیریت سبد ها"
+            targetPath="/carts"
             icon="fas fa-shopping-basket"
+            title="مدیریت سبد ها"
           />
-
           <SidebarItem
-            targetPath="/test"
-            title="مدیریت سفارشات"
+            targetPath="/orders"
             icon="fas fa-luggage-cart"
+            title="مدیریت سفارشات"
           />
-
           <SidebarItem
-            targetPath="/test"
-            title="مدیریت نحوه ارسال"
+            targetPath="/deliveries"
             icon="fas fa-truck-loading"
+            title="مدیریت نحوه ارسال"
           />
           {/* <!-- =================================== --> */}
 
           <SidebarGroupTitle title="کاربران و همکاران" />
 
           <SidebarItem
-            targetPath="/test"
-            title="مشاهده کاربران"
+            targetPath="/users"
             icon="fas fa-users"
+            title="مشاهده کاربران"
           />
-
           <SidebarItem
-            targetPath="/test"
-            title="نقش ها"
+            targetPath="/roles"
             icon="fas fa-user-tag"
+            title="نقش ها"
           />
-
           <SidebarItem
-            targetPath="/test"
-            title="مجوز ها"
+            targetPath="/permissions"
             icon="fas fa-shield-alt"
+            title="مجوز ها"
           />
           {/* <!-- =================================== --> */}
 
           <SidebarGroupTitle title=" ارتباطات" />
 
           <SidebarItem
-            targetPath="/test"
-            title="سوال ها"
+            targetPath="/questions"
             icon="fas fa-question-circle"
+            title="سوال ها"
           />
-
-          <SidebarItem targetPath="/test" title="نظرات" icon="fas fa-comment" />
+          <SidebarItem
+            targetPath="/comments"
+            icon="fas fa-comment"
+            title="نظرات"
+          />
           {/* <!-- <li className="py-2 btn-group dropstart pe-4">
                     <i className="ms-3 icon fas fa-check text-light"></i>
                     <span className="hiddenable" data-bs-toggle="dropdown" aria-expanded="false">داشبورد</span>

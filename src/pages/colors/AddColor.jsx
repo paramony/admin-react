@@ -27,7 +27,7 @@ const AddColor = () => {
               </div>
             </div>
             <div className="col-12">
-              <label for="exampleColorInput" className="form-label">
+              <label htmlFor="exampleColorInput" className="form-label">
                 انتخاب رنگ
               </label>
               <input

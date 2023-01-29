@@ -7,6 +7,15 @@ import { Route, Routes } from 'react-router-dom';
 import Colors from './colors/Colors';
 import Guaranties from './guarantee/Guaranties';
 import Brands from './brands/Brands';
+import Questions from './questions/Questions';
+import Roles from './roles/Roles';
+import Users from './users/Users';
+import Orders from './orders/Orders';
+import Permissions from './permissions/Permissions';
+import Deliveries from './deliveries/Deliveries';
+import Discounts from './discounts/Discounts';
+import Comments from './comments/Comments';
+import Carts from './carts/Carts';
 
 const Content = () => {
   const { showSidebar } = useContext(AdminContext);
@@ -22,6 +31,15 @@ const Content = () => {
         <Route path="/colors" element={<Colors />} />
         <Route path="/guraranties" element={<Guaranties />} />
         <Route path="/brands" element={<Brands />} />
+        <Route path="/discounts" element={<Discounts />} />
+        <Route path="/carts" element={<Carts />} />
+        <Route path="/orders" element={<Orders />} />
+        <Route path="/deliveries" element={<Deliveries />} />
+        <Route path="/users" element={<Users />} />
+        <Route path="/roles" element={<Roles />} />
+        <Route path="/permissions" element={<Permissions />} />
+        <Route path="/questions" element={<Questions />} />
+        <Route path="/comments" element={<Comments />} />
         <Route path="*" element={<Dashboard />} />
       </Routes>
     </section>
