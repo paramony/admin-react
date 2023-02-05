@@ -3,13 +3,14 @@ import { FastField, Form, Formik } from 'formik';
 import React from 'react';
 import * as Yup from 'yup';
 import AuthFormikControl from '../../components/authForm/AuthFormikControl';
+import { useNavigate } from 'react-router-dom';
 
 const initialValues = {
   phone: '',
   password: '',
   remember: false,
 };
-const onSubmit = (values) => {
+const onSubmit = (values, navigate) => {
   console.log(values);
   axios
     .post('http://127.0.0.1:8000/api/auth/login', {
@@ -18,6 +19,10 @@ const onSubmit = (values) => {
     })
     .then((res) => {
       console.log(res);
+      if (res.status === 200) {
+        localStorage.setItem('loginToken', JSON.stringify(res.data));
+        navigate('/');
+      }
     });
 };
 const validationSchema = Yup.object({
@@ -29,10 +34,11 @@ const validationSchema = Yup.object({
 });
 
 const Login = () => {
+  const navigate = useNavigate();
   return (
     <Formik
       initialValues={initialValues}
-      onSubmit={onSubmit}
+      onSubmit={(values) => onSubmit(values, navigate)}
       validationSchema={validationSchema}
     >
       {(formik) => {

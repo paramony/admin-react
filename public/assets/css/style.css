@@ -367,7 +367,20 @@ th {
   );
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FF930F", endColorstr="#FFF95B", GradientType=1 );
 }
-
+.waiting_center {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation-name: opacityChange;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+}
 .dashboard_card_parent:nth-child(2) .dashboard_card {
   background: hsla(332, 75%, 76%, 1);
   background: linear-gradient(
